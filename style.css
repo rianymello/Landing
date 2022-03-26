@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+
+}
+
+body {
+    font-size: 100%;
+    background: linear-gradient(68.15deg, #2f2325 16.62%, #8e5d52 85.61%);
+}
+
+.cabecalho {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 11px;
+}
+
+
+.cabecalho-menu {
+    display: flex;
+    gap:32px;
+}
+
+.cabecalho-menu-item {
+    font-family: 'Sarala', sans-serif;
+    color: #fff2e7;
+    font-weight: 400;
+    font-size: 18px;
+}
+.cabecalho-menu-item {
+    cursor: pointer;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.cabecalho-menu-item::after {
+      position: absolute;
+      bottom: 0;
+      content: "";
+      height: 0;
+      width: 0;
+      background-color:#fff2e7;
+      color: #fff2e7;
+      left: 50%;
+      transform: translate(-50%);
+      transition: width 0.5s, height 0.2s;
+}
+
+.cabecalho-menu-item:hover::after {
+    width: 100%;
+    height: 2.5px;
+    border-radius: 8px;
+  }
+
+.conteudo {
+    border-top: 0.4px solid #fff2e7;
+    margin-bottom: 30px;
+}
+
+.conteudo-principal{
+    display: flex;
+    margin-left: 185px;
+    margin-top: 150px;
+    margin-bottom: 180px;
+}
+
+.conteudo-principal-escrito-titulo {
+  
+    color:#fff2e7;
+    text-shadow: 0.1em 0.1em 0.2em #2f2325;
+    font-size: 74px;
+    font-weight: 88px;
+    margin-bottom: 18px;
+    
+}
+
+.conteudo-principal-escrito-subtitulo {
+    font-family: 'Sarala', sans-serif;
+    color: #fff2e7;
+    letter-spacing: 2px;
+    word-spacing: 4px;
+    margin-bottom: 70px;
+}
+
+
+.conteudo-secundario-escrito {
+    height: 500px;
+    width: 500px;
+    background-color: #855a51;
+    margin-left: 117px;
+    z-index: -1;
+    padding: 60px;
+}
+
+.conteudo-secundario {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 180px;
+}
+
+.conteudo-secundario-imagem {
+    width: 600px;
+    height: auto;
+    margin-left:-45px;
+}
+
+.titulo-secundario {
+    font-family: 'Righteous', cursive;
+    color: #fff2e7;
+    margin-bottom: 10px;
+}
+
+.paragrafo-secundario {
+    font-family: 'Sarala', sans-serif;
+    color: #fff2e7;
+    line-height:28px;
+}
+
+  .titulo-final {
+      color: #fff2e7;
+      text-align: center;
+      margin-bottom: 50px;
+      font-family: 'Righteous', cursive;
+      text-shadow: 0.1em 0.1em 0.2em #2f2325;
+      font-size: 22px;
+  }
+
+.todos-os-servicos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.cada-servico {
+   
+    color: #fff2e7;
+    font-family: 'Righteous', cursive;
+    width: 350px;  
+    padding:25px;   
+    transition-duration: 0.8s;
+}
+.cada-servico:hover {
+    transform: scale(1.1);
+    transition: 0.7s;
+    border: #2f23259d 0.5px solid;
+}
+
+ .imagem-servicos {
+    max-width: 100%;
+    max-width: 100%;
+    height: auto;
+    text-align:center;
+    margin-bottom: 22px;
+}
+
+.titulo-servico {
+    font-family: 'Sarala', sans-serif;
+    font-size: 25px;
+}
+
+
+.pezinho {
+    background-color: #855a51;
+    width: 100%;
+    height: 60px;
+    margin-top: 60px;
+}
+
+.popup-wrapper {
+    background-color: rgba(0, 0, 0,0.5);
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: 300%;
+    display: none;
+    position: fixed;
+}
+
+.popup {
+   
+    width: 100%;
+    max-width: 300px;
+    height: 100%;
+    max-height: 400px;
+    margin: 10% auto;
+    padding: 20PX; 
+    background-color: #855a51f1;
+    position: relative;
+    border-radius: 25px;
+  
+}
+
+.titulo-popup {
+    font-family: 'Righteous', cursive;
+    color: #fff2e7;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.popup-content {
+    display: flex;
+    flex-direction: column; 
+}
+
+.campos-popup {
+    display: flex;
+    text-align: center;
+    flex-direction: column; 
+    margin-left: 17px ;
+    margin-right: 17px;
+}
+
+.cada-campo {
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 8px;
+    background-color: #fff2e7;
+    height: 25px;
+
+}
+.popup-botao {
+    border:none;
+    color: #2f2325;
+    background-color: #fff2e7;
+    width: 60px;
+    height: 20px;
+    border-radius: 8px;
+    margin-left: 180px;
+}
+
+.popup-close {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    cursor: pointer;
+}
+
+#idade::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
